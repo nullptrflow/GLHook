@@ -159,7 +159,7 @@ void WINAPI hooked_glScalef(GLfloat x, GLfloat y, GLfloat z)
 
 1. Review [API.md](API.md) for full API reference
 2. Check [EXAMPLES.md](EXAMPLES.md) for practical examples
-3. Read [README.md](README.md) for technical details
+3. Read [../README.md](../README.md) for technical details
 4. Experiment with modifying different functions
 
 ## Additional Resources
@@ -171,7 +171,7 @@ void WINAPI hooked_glScalef(GLfloat x, GLfloat y, GLfloat z)
 ## Support
 
 - Check existing [Issues](../../issues)
-- Review [Documentation](README.md)
+- Review [Documentation](../README.md)
 - Create new [Issue](../../issues/new) with detailed information
 
 ---

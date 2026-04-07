@@ -4,7 +4,7 @@ Complete guide to all documentation files in the GLHook project.
 
 ## 📖 Main Documentation
 
-### [README.md](README.md) - **START HERE**
+### [README.md](../README.md) - **START HERE**
 - Project overview and features
 - Architecture and how it works
 - Quick start guide
@@ -58,20 +58,20 @@ Complete guide to all documentation files in the GLHook project.
 - Promotion strategies
 - **Best for:** Publishing your project on GitHub
 
-### [LICENSE](LICENSE) - **MIT License**
+### [LICENSE](../LICENSE) - **MIT License**
 - Legal terms and conditions
 - Permissions and limitations
 - **Best for:** Understanding legal usage rights
 
 ## 📁 Source Code
 
-### [dllmain.cpp](dllmain.cpp)
+### [dllmain.cpp](../src/dllmain.cpp)
 - Main hooking implementation (434 lines)
 - Hook installation and removal
 - Trampoline generation
 - DLL entry point
 
-### [help/](help/) - **Support Libraries**
+### [help/](../src/help/) - **Support Libraries**
 - `hde64.c/h` - x86-64 instruction disassembler
 - `buffer.c/h` - Memory buffer management
 - `pstdint.h` - Platform-independent types
@@ -83,14 +83,14 @@ Complete guide to all documentation files in the GLHook project.
 
 | Goal | Read This |
 |------|-----------|
-| Understand what this is | [README.md](README.md) |
+| Understand what this is | [README.md](../README.md) |
 | Build and run it | [QUICKSTART.md](QUICKSTART.md) |
 | Learn how to use it | [API.md](API.md) |
 | See code examples | [EXAMPLES.md](EXAMPLES.md) |
 | Upload to GitHub | [GITHUB_UPLOAD.md](GITHUB_UPLOAD.md) |
 | Contribute to project | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| Understand the license | [LICENSE](LICENSE) |
-| Review the code | [dllmain.cpp](dllmain.cpp) |
+| Understand the license | [LICENSE](../LICENSE) |
+| Review the code | [dllmain.cpp](../src/dllmain.cpp) |
 
 ## 📊 Documentation Statistics
 
@@ -105,39 +105,45 @@ This Index:             ~150 lines
 ## 🔍 Key Concepts by Document
 
 ### Architecture Deep Dive
-- See: [README.md - Technical Architecture](README.md#technical-architecture)
-- Code: [dllmain.cpp:89-291](dllmain.cpp) (CreateTrampolineFunction)
+- See: [README.md - Technical Architecture](../README.md#technical-architecture)
+- Code: [dllmain.cpp:89-291](../src/dllmain.cpp) (CreateTrampolineFunction)
 
 ### Hooking Mechanism
-- See: [README.md - How It Works](README.md#how-it-works)
-- Diagram: [README.md - Memory Layout](README.md#memory-layout-x64)
+- See: [README.md - How It Works](../README.md#how-it-works)
+- Diagram: [README.md - Memory Layout](../README.md#memory-layout-x64)
 
 ### Adding New Hooks
 - See: [API.md - Adding New Hooks](API.md#adding-new-hooks)
 - Example: [EXAMPLES.md - Example 1](EXAMPLES.md#example-1-basic-hooking-and-logging)
 
 ### Performance Optimization
-- See: [README.md - Performance Issues](README.md#performance-issues)
+- See: [README.md - Performance Issues](../README.md#performance-issues)
 - Example: [EXAMPLES.md - Example 3](EXAMPLES.md#example-3-performance-monitoring)
 
 ## 🏗️ Project Structure
 
 ```
 GLHook/
-├── 📄 README.md              ← Start here
-├── 📄 QUICKSTART.md          ← Setup guide
-├── 📄 API.md                 ← Technical reference
-├── 📄 EXAMPLES.md            ← Code examples
-├── 📄 CONTRIBUTING.md        ← How to contribute
-├── 📄 GITHUB_UPLOAD.md       ← Deployment guide
-├── 📄 LICENSE                ← MIT License
-├── 📄 DOCS_INDEX.md          ← This file
-├── 💻 dllmain.cpp            ← Main source
-└── 📁 help/                  ← Support libraries
-    ├── hde64.c/h
-    ├── buffer.c/h
-    ├── pstdint.h
-    └── table64.h
+├── 📁 src/
+│   ├── 💻 dllmain.cpp            ← Main source
+│   └── 📁 help/                  ← Support libraries
+│       ├── hde64.c/h
+│       ├── buffer.c/h
+│       ├── pstdint.h
+│       └── table64.h
+├── 📁 docs/                      ← Documentation
+│   ├── 📄 README.md              ← Start here
+│   ├── 📄 QUICKSTART.md          ← Setup guide
+│   ├── 📄 API.md                 ← Technical reference
+│   ├── 📄 EXAMPLES.md            ← Code examples
+│   ├── 📄 CONTRIBUTING.md        ← How to contribute
+│   ├── 📄 GITHUB_UPLOAD.md       ← Deployment guide
+│   ├── 📄 DOCS_INDEX.md          ← This file
+│   └── 📄 SETUP_COMPLETE.md      ← Setup info
+├── 📄 README.md                  ← Main README (GitHub)
+├── 📄 LICENSE                    ← MIT License
+├── .gitignore                    ← Git exclusions
+└── .gitattributes                ← Line ending config
 ```
 
 ## 🎓 Learning Path

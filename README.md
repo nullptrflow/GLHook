@@ -145,7 +145,7 @@ Trampoline:
 ### Usage
 
 ```cpp
-#include "dllmain.cpp"
+#include "src/dllmain.cpp"
 
 // The DLL automatically hooks OpenGL functions on load
 // Add custom logic in the hooked_* functions:
@@ -165,15 +165,23 @@ void WINAPI hooked_glOrtho(GLdouble left, GLdouble right, GLdouble bottom,
 
 ```
 GLHook/
-├── dllmain.cpp           — Main hook implementation
-├── help/
-│   ├── hde64.h/.c        — x86-64 instruction disassembler
-│   ├── buffer.h/.c       — Memory buffer management
-│   ├── pstdint.h         — Platform-independent integer types
-│   └── table64.h         — HDE64 instruction lookup table
-├── README.md             — This file
-├── LICENSE               — MIT License
-└── CONTRIBUTING.md       — Contribution guidelines
+├── 📁 src/
+│   ├── dllmain.cpp           — Main hook implementation
+│   └── help/
+│       ├── hde64.h/.c        — x86-64 instruction disassembler
+│       ├── buffer.h/.c       — Memory buffer management
+│       ├── pstdint.h         — Platform-independent integer types
+│       └── table64.h         — HDE64 instruction lookup table
+├── 📁 docs/
+│   ├── API.md                — API reference
+│   ├── EXAMPLES.md           — Code examples
+│   ├── QUICKSTART.md         — Quick start guide
+│   ├── CONTRIBUTING.md       — Contribution guidelines
+│   └── DOCS_INDEX.md         — Documentation index
+├── README.md                 — This file
+├── LICENSE                   — MIT License
+├── .gitignore                — Git exclusions
+└── .gitattributes            — Line ending config
 ```
 
 ## Implementation Details
@@ -214,7 +222,7 @@ The hooking system handles various instruction types:
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
 ## License
 

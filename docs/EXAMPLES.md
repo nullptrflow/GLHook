@@ -309,4 +309,4 @@ try {
 
 ---
 
-For more information, see [API.md](API.md) and [README.md](README.md).
+For more information, see [API.md](API.md) and [../README.md](../README.md).
