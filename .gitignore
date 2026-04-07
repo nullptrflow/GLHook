@@ -1,0 +1,55 @@
+# Visual Studio
+.vs/
+.vscode/
+*.vcxproj.user
+*.sln.user
+
+# Build artifacts
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# Compiler outputs
+*.o
+*.a
+*.so
+*.dylib
+*.la
+*.lo
+
+# IDE and Editor
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Project files
+*.ncb
+*.VC.db
+*.VC.VC.opendb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+
+# Node (if using npm scripts)
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
