@@ -132,7 +132,7 @@ Trampoline:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/GLHook.git
+   git clone https://github.com/nullptrflow/GLHook.git
    cd GLHook
    ```
 
@@ -263,5 +263,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Created by:** nxcod  
-**Repository:** https://github.com/yourusername/GLHook
+**Created by:** nullptrflow  
+**Repository:** https://github.com/nullptrflow/GLHook
