@@ -1,0 +1,26 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Source code
+*.cpp text eol=lf
+*.h text eol=lf
+*.c text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+
+# Git
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Binary files
+*.dll binary
+*.exe binary
+*.obj binary
+*.pdb binary
+
+# Visual Studio
+*.vcxproj text eol=lf
+*.vcxproj.filters text eol=lf
+*.sln text eol=lf
