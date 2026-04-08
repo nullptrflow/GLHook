@@ -14,7 +14,7 @@ Thank you for your interest in contributing to GLHook! This document provides gu
 1. **Fork the repository**
 2. **Clone your fork:**
    ```bash
-   git clone https://github.com/yourusername/GLHook.git
+   git clone https://github.com/nullptrflow/GLHook.git
    cd GLHook
    ```
 3. **Create a feature branch:**
